@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My To Do Widget</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="todayis">
+          <img class="weathericon">
+          <span class="temp"></span>
+        </div>
+        <span class="weather"></span>
+        <div class="time">
+          <h2 class="date">12.12</h2>
+          <h1 class="clock">00:00:00</h1>
+        </div>
+        <div class="greet">
+          <h3 class="welcome">Hello,</br>Strager?</h3>
+          <form class="name">
+            <input type="text" placeholder="Your name enter">
+          </form>
+          <form class="todos">
+            <input type="text" placeholder="Write your To do">
+          </form>
+          <ul class="todolist">
+            <button class="resetbtn">Reset List</button>
+          </ul>
+        </div>
+        <span class="copy">copyright. <a href="#">dopamingo</a></span>
+        <!-- 따로 포폴이 없어서... -->
+      </div>
+    </main>
+    <div class="bg"></div>
+    <script src="./bg.js"></script>
+    <script src="./clock.js"></script>
+    <script src="./greet.js"></script>
+    <script src="./weather.js"></script>
+  </body>
+</html>

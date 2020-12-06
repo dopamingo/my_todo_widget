@@ -1,0 +1,148 @@
+body {
+    font-family: serif;
+    background-color: rgb(247, 212, 191);
+    position: relative;
+}
+@keyframes bgIn {
+    from { opacity: 0; }
+    to   { opacity: 0.15; }
+}
+@keyframes textIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes textInDelay{
+    0% { opacity:0; }
+    45% { opacity:0; }
+    100% { opacity:1; }
+}
+.bg{
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.15;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    animation: bgIn 3s;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.time {
+    text-align: center;
+    color: #fff;
+    margin: -90px 0 90px 0;
+    animation: textIn 4s ease;
+}
+.date {
+    font-size: 36px;
+}
+.clock {
+    font-size: 100px;
+}
+.greet {
+    width:310px;
+}
+
+.welcome {
+    text-align: center;
+    color: rgb(97, 84, 84);
+    font-size: 42px;
+    margin: -50px 0 10px 0;
+    animation: textIn 4s ease;
+}
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    font-family: serif;
+    font-size: 20px;
+    width:300px;
+    background: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 14px 0;
+    padding: 6px;
+    animation: textInDelay 3s ease;
+}
+input:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+.todayis {
+    display: flex;
+    align-items: center;
+    color: rgb(97, 84, 84);
+    font-size: 20px;
+    position: fixed;
+    right: 8px;
+    animation: textIn 4s ease;
+    writing-mode: vertical-lr;
+}
+.weather {
+    color: rgb(97, 84, 84);
+    font-size: 20px;
+    position: fixed;
+    top: 24px;
+    animation: textIn 4s ease;
+}
+.weathericon {
+    filter: grayscale(100%);
+}
+.copy {
+    color: rgb(97, 84, 84);
+    font-size: 20px;
+    position: fixed;
+    bottom: 24px;
+    animation: textIn 4s ease;
+}
+a {
+    text-decoration: underline;
+    color: rgb(97, 84, 84);
+}
+button {
+    color: rgb(158, 137, 137);
+    background: none;
+    cursor: pointer;
+}
+button:hover {
+    color: #fff;
+}
+.todolist li {
+    color: rgb(97, 84, 84);
+    font-size: 18px;
+    line-height: 32px;
+    animation: textIn 3s ease;
+}
+.delbtn {
+    margin-left: 4px;
+    border: none;
+}
+.resetbtn {
+    font-family: serif;
+    margin: 14px 0;
+    border-width: 1px 0 1px 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    animation: textIn 3s ease;
+}
+.hidden {
+    display: none;
+}
+.showing {
+    display: block;
+}
