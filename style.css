@@ -16,6 +16,12 @@ body {
     45% { opacity:0; }
     100% { opacity:1; }
 }
+.hidden {
+    display: none;
+}
+.showing {
+    display: block;
+}
 .bg{
     position: absolute;
     top: 0;
@@ -38,25 +44,30 @@ body {
 .time {
     text-align: center;
     color: #fff;
-    margin: -90px 0 90px 0;
+    margin: -60px 0 90px 0;
     animation: textIn 4s ease;
 }
 .date {
     font-size: 36px;
 }
 .clock {
-    font-size: 100px;
+    font-size: 90px;
 }
 .greet {
-    width:310px;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
 }
-
 .welcome {
     text-align: center;
     color: rgb(97, 84, 84);
-    font-size: 42px;
-    margin: -50px 0 10px 0;
+    font-size: 58px;
+    line-height: 50px;
+    margin: -50px 0 0 0;
     animation: textIn 4s ease;
+}
+ul, form {
+    align-self: center;
 }
 input {
     outline: 0;
@@ -79,6 +90,42 @@ input:focus {
     color: rgba(0, 0, 0, 0.2);
     font-size: 20px;
   }
+
+button {
+    color: rgb(97, 84, 84);
+    background: none;
+    cursor: pointer;
+}
+button:hover {
+    color: #fff;
+}
+.todolist li {
+    width: 300px;
+    color: rgb(97, 84, 84);
+    font-size: 18px;
+    line-height: 32px;
+    animation: textIn 3s ease;
+}
+.delbtn {
+    margin-left: 4px;
+    opacity: 0.2;
+    border: none;
+}
+.delbtn:hover {
+    opacity: 1;
+}
+
+.resetbtn {
+    font-family: serif;
+    margin: 14px 0;
+    border-width: 1px 0 1px 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    animation: textIn 3s ease;
+}
 .todayis {
     display: flex;
     align-items: center;
@@ -97,6 +144,7 @@ input:focus {
     animation: textIn 4s ease;
 }
 .weathericon {
+    transform:rotate(90deg);
     filter: grayscale(100%);
 }
 .copy {
@@ -109,40 +157,4 @@ input:focus {
 a {
     text-decoration: underline;
     color: rgb(97, 84, 84);
-}
-button {
-    color: rgb(158, 137, 137);
-    background: none;
-    cursor: pointer;
-}
-button:hover {
-    color: #fff;
-}
-.todolist li {
-    color: rgb(97, 84, 84);
-    font-size: 18px;
-    line-height: 32px;
-    animation: textIn 3s ease;
-}
-.delbtn {
-    margin-left: 4px;
-    border: none;
-}
-.resetbtn {
-    font-family: serif;
-    margin: 14px 0;
-    border-width: 1px 0 1px 0;
-    border-color: rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 30px;
-    animation: textIn 3s ease;
-}
-.hidden {
-    display: none;
-}
-.showing {
-    display: block;
 }

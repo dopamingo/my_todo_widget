@@ -36,6 +36,7 @@ function handleSubmit(e){
 function paintGreet(text){
     nameForm.classList.add(HIDDEN);
     todoForm.classList.remove(HIDDEN);
+    todoList.classList.remove(HIDDEN);
     time.classList.remove(HIDDEN);
     welcome.innerText = `Welcome, ${text}`;
     welcome.style.fontSize = "28px";
